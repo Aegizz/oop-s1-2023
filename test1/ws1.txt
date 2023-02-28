@@ -1,0 +1,10 @@
+1. What is the purpose of the log message you supply to your git commit?
+It details the changes made before you submitted that version of the repo to git. This is to clearly explain the changes you made to anyone viewing your progress and file history.
+
+2. What makes a good commit message?
+Clear, concise and simple explanation of your changes
+
+3. Fairly often to change the tracking of your work
+
+4. Yes, as it is good to back them up.
+
