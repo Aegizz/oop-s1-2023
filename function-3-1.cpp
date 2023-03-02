@@ -14,7 +14,7 @@ bool is_fanarray(int array[], int n){
             backwards = backwards - 1;
         }
         //Iterate other end backwards to check is ascending from one side
-        for (int i =1; i <= backwards; i++){
+        for (int i =1; i < backwards; i++){
             if (array[i-1] > array[i]){
                     //return zero if the next element is smaller
                     return 0;
