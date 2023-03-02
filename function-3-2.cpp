@@ -32,6 +32,6 @@ int median_array(int array[], int n){
         }
     }
 
-    int median = ((n+1)/2 -1);
+    int median = ((n + 1)/2);
     return array[median];
 }

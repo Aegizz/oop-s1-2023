@@ -4,7 +4,7 @@ bool is_fanarray(int array[], int n){
     if (n < 1){
         return 0;
     } else {
-        int backwards = n -1;
+        int backwards = n - 1;
         //Only do half of array (only need to check half)
         int b = (n+1)/2;
 
