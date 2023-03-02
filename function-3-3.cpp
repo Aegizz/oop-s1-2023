@@ -26,7 +26,6 @@ double weighted_average(int array[], int n) {
         double doubleN = n;
         //Loop through and do the math for weight averaged
         for (int i =0; i < n; i++){
-            std::cout << array[i] << weights[i];
 
             average = average + ((array[i] * weights[i])/doubleN);            
         }
