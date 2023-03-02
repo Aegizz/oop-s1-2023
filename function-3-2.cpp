@@ -32,9 +32,12 @@ int median_array(int array[], int n){
         }
     }
     int median;
+    //Use ordered to find median
+
     if (n % 2 == 0) {
-        median = ((n)/2) - 1;
-        return ((array[median] + array[median + 1])/2);
+        int medianPos = ((n)/2) - 1;
+        int median = (array[medianPos] + array[medianPos + 1])/2;
+        return median;
     } else {
         median = ((n+1)/2) - 1;
         return array[median];
