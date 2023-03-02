@@ -5,10 +5,8 @@ bool is_fanarray(int array[], int n){
         return 0;
     } else {
         int backwards = n - 1;
-        //Only do half of array (only need to check half)
-        int b = (n+1)/2;
-
-        for (int i =0; i < b; i++){
+        //loop through entire array check that it is same array
+        for (int i =0; i < n; i++){
             if (array[i] != array[backwards]){
                 return 0;
             }
