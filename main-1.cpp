@@ -13,5 +13,5 @@ int main() {
     std::cout << "The average of the array is " << array_mean(array,5)<<std::endl;
     std::cout << "Parameter count is equal to " << num_count(array, 5, 3)<<std::endl;
     std::cout << "Sum of both arrays is: " << sum_two_arrays(array,array2, 5)<< std::endl;
-    std::cout << "Number of even numbers between parameter is " << count_evens(4)<<std::endl;
+    std::cout << "Number of even numbers between parameter is " << count_evens(1)<<std::endl;
 }
