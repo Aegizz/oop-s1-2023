@@ -8,8 +8,9 @@ double array_mean(int array[], int n){
             //loop through summing the numbers in the array
             sum = array[i] + sum;
         }
+        double doubleN = n;
         //average the numbers and return them by using the number of elements
-        double average = sum/n;
+        double average = sum/doubleN;
         return average;
 
     }   else {
