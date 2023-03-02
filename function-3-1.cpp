@@ -1,12 +1,14 @@
 #include <iostream>
 #include <cmath>
 bool is_fanarray(int array[], int n){
+
     if (n < 1){
         return 0;
     } else {
-        int backwards = n - 1;
-        //loop through entire array check that it is same array
-        for (int i =0; i < n; i++){
+        int backwards = n-1;
+        //loop through half of array check that it is same array backwards
+        for (int i =0; i <= backwards; i++){
+
             if (array[i] != array[backwards]){
                 return 0;
             }
@@ -15,7 +17,9 @@ bool is_fanarray(int array[], int n){
                 return 0;
             }
             //Iterate other end backwards to check is palindrome
+
             backwards = backwards - 1;
+
         }
         //return true if no return 0s
         return 1;
