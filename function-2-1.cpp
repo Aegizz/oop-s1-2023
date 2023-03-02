@@ -6,7 +6,7 @@ int min_element(int array[], int n){
         return 0;
     } else {
         //define the smallest number as the first element
-        int smallestNumber = array[1];
+        int smallestNumber = array[0];
         for (int i = 1; i < n; i++){
             //iterate through array and check that the next number is not smaller
             if (smallestNumber > array[i]){
