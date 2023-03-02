@@ -4,8 +4,8 @@ extern bool is_fanarray(int[], int);
 
 
 int main() {
-    int array[5] = {2,4, 4,2};
+    int array[6] = {1,3,1};
 
-    std::cout << "Fan array bool is " << is_fanarray(array, 4)<< std::endl;
+    std::cout << "Fan array bool is " << is_fanarray(array, 3)<< std::endl;
    
 }
