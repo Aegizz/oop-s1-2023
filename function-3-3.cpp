@@ -8,17 +8,16 @@ double weighted_average(int array[], int n) {
         int *weights = new int(n);
         //Init array for weights
         for (int i = 0; i < n; i++){
-            weights[i] = 0;
-            //Set weight in slot 0 to 0
-            for (int j =0; j < n; j++){
-                if (array[i] == array[j]){
-                    //If another element of the array = element of array increase the weight
-                    weights[i] = weights[i] + 1;
-                    if (weights[i] > 1){
-                        //Excluding itself remove the other elements from the array so its not counted twice
-                        array[j] = 0;
-                    }
+            //ignore 0s in array as they dont add to the average
+            if (array[i] != 0){
+                weights[i] = 0;
+                //Set weight in slot 0 to 0
+                for (int j =0; j < n; j++){
+                    if (array[i] == array[j]){
+                        //If another element of the array = element of array increase the weight
+                        weights[i] = weights[i] + 1;
 
+                    }
                 }
             }
         }
@@ -27,7 +26,9 @@ double weighted_average(int array[], int n) {
         double doubleN = n;
         //Loop through and do the math for weight averaged
         for (int i =0; i < n; i++){
-            average = average + (array[i] * weights[i])/doubleN;            
+            std::cout << array[i] << weights[i];
+
+            average = average + ((array[i] * weights[i])/doubleN);            
         }
         //Return the weighted average
         return average;

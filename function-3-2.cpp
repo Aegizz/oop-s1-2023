@@ -39,8 +39,8 @@ int median_array(int array[], int n){
         int median = (array[medianPos] + array[medianPos + 1])/2;
         return median;
     } else {
-        median = ((n+1)/2) - 1;
-        return array[median];
+        int medianPos = ((n+1)/2) - 1;
+        return array[medianPos];
 
     }
 
