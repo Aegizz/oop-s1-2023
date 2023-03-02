@@ -16,8 +16,10 @@ bool is_fanarray(int array[], int n){
                 //return zero if the next element is smaller
                 return 0;
             }
+            //Iterate other end backwards to check is palindrome
             backwards = backwards - 1;
-        } 
+        }
+        //return true if no return 0s
         return 1;
         
     }
