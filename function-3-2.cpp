@@ -1,7 +1,9 @@
 #include <iostream>
 
 int median_array(int array[], int n){
-    if (n < 1){
+    if (n < 1) {
+        return 0;
+    } if (n % 2 == 0) {
         return 0;
     } else {
         //init bool for the array order and temporary number to old values of moving positions
@@ -37,15 +39,10 @@ int median_array(int array[], int n){
         int median;
         //Use ordered to find median
 
-        if (n % 2 == 0) {
-            int medianPos = ((n)/2) - 1;
-            int median = (array[medianPos] + array[medianPos + 1])/2;
-            return median;
-        } else {
+
             int medianPos = ((n+1)/2) - 1;
             return array[medianPos];
 
         }
 
-    }
 }
