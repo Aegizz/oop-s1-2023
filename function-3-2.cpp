@@ -15,7 +15,7 @@ int median_array(int array[], int n){
             }
         }
         //If all the numbers are in order up break the while loop
-        if (count ==  n -1){
+        if (count ==  n-1){
             arrayOrder = true;
         }
         //If arrayOrder is just finishing but hasnt ignore else reposition all numbers out of position
@@ -31,7 +31,14 @@ int median_array(int array[], int n){
             }
         }
     }
+    int median;
+    if (n % 2 == 0) {
+        median = ((n)/2) - 1;
+        return ((array[median] + array[median + 1])/2);
+    } else {
+        median = ((n+1)/2) - 1;
+        return array[median];
 
-    int median = ((n + 1)/2);
-    return array[median];
+    }
+
 }
