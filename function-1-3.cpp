@@ -41,8 +41,8 @@ void count_digits(int array[4][4]){
         }
         
     }
-    cout << "zeros:"<< zeros << ";ones:" << ones << ";twos:" << twos << ";threes:"<<threes << ";fours:" << fours << ";fives:" << fives
-    << ";sixes:" << sixs << ";sevens:" << ";eights:" <<eights << ";nines:" << nines << endl;
+    cout << "0:"<< zeros << ";1:" << ones << ";2:" << twos << ";3:"<<threes << ";4:" << fours << ";5:" << fives
+    << ";6:" << sixs << ";7:" << ";8:" <<eights << ";9:" << nines << endl;
 
 
 }

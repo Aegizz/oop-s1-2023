@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern void print_scaled(int[3][3], int);
+extern void print_scaled(int[3][3],int)
 
 int main(){
     int scale = 3 ;
