@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <chrono>
 using namespace std;
 
 int checkBitSize(int num) {
@@ -11,6 +12,7 @@ int checkBitSize(int num) {
 }
 
 int main() {
+
     int num;
     int binarray[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     cout << "Please enter a number: ";
@@ -30,7 +32,8 @@ int main() {
     for (int i=0; i < 16; i++){
         cout << binarray[i];
     }
+
     cout << endl;
-    
+
     return 0;
 }
