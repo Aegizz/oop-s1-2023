@@ -1,6 +1,5 @@
 #include <iostream>
 
-#include <iostream>
 using namespace std;
 extern int is_identity(int[10][10]);
 int main() {
