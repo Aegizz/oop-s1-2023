@@ -1,12 +1,17 @@
 #include <iostream>
 
 using namespace std;
-void print_matrix(int array[10][10]){
-    for (int i=0; i < 10; i++){
-        for (int j=0; j<10; j++){
-            cout << array[i][j] << " ";
-        }
-        cout << "\n";
+int* readNumbers(){
+    int * array;
+    array = new int[10];
+    for (int i = 0; i < 10; i++){
+        cin >> array[i];
     }
-    cout << endl;
+    return array;
 }
+void printNumbers(int *numbers, int length){
+    for (int i = 0; i < length; i++){
+        cout << i << " " << numbers[i] << "\n";
+    }
+}
+
