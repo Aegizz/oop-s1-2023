@@ -5,8 +5,8 @@ PersonList createPersonList(int n){
     array = new Person[n];
     for (int i = 0; i < n; i++){
         Person Person1;
-        Person1.age = 0;
-        Person1.name = "John Doe";
+        Person1.age = 1;
+        Person1.name = "Jane Doe";
         array[i] = Person1;
     }
     PersonList listPerson;
