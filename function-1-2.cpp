@@ -1,5 +1,4 @@
 
-#include "PersonList.h"
 #include "Person.h"
 
 PersonList createPersonList(int n){
