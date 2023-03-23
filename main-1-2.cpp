@@ -9,7 +9,7 @@ int main(){
     listPerson = createPersonList(n);
     for (int i =0; i < n; i++){
         Person person1;
-        person1 = listPerson.people[i]
+        person1 = listPerson.people[i];
         cout << person1.age;
         cout << person1.name;
     }
