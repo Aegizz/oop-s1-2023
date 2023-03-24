@@ -7,8 +7,19 @@ extern PersonList createPersonList(int);
 extern PersonList shallowCopyPersonList(PersonList);
 int main(){
     int n = 3;
+    PersonList listPerson;   
+    Person* array;
+    array = new Person[n];
+    for (int i = 0; i < n; i++){
+        Person Person1;
+        Person1.age = 1;
+        Person1.name = "Jane Doe";
+        array[i] = Person1;
+    }
     PersonList listPerson;
-    listPerson = createPersonList(n);
+    listPerson.people = array;
+    listPerson.numPeople = n;
+
     for (int i =0; i < n; i++){
         Person person1;
         person1 = listPerson.people[i];
