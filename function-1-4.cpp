@@ -1,5 +1,5 @@
 #include "Person.h"
-PersonList deepCopyPersonList(PersonList listPersons){
+PersonList shallowCopyPersonList(PersonList listPersons){
     PersonList newList;
 
     newList.people = listPersons.people;
