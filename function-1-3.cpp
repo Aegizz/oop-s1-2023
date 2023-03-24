@@ -1,10 +1,11 @@
 #include "Person.h"
 PersonList deepCopyPersonList(PersonList listPersons){
     PersonList newList;
-
+    int numberPeople;
     Person* peopleList;
     peopleList = listPersons.people;
-    newList.numPeople = listPersons.numPeople;
+    numberPeople = listPersons.numPeople;
+    newList.numPeople = numberPeople;
     newList.people = peopleList;
     
     return newList;
