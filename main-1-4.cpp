@@ -16,7 +16,6 @@ int main(){
         Person1.name = "Jane Doe";
         array[i] = Person1;
     }
-    PersonList listPerson;
     listPerson.people = array;
     listPerson.numPeople = n;
 

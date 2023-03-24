@@ -2,7 +2,8 @@
 PersonList deepCopyPersonList(PersonList listPersons){
     PersonList newList;
 
-    People* peoplelist = listPersons.people;
+    People* peoplelist;
+    peoplelist = listPersons.people;
     newList.numPeople = listPersons.numPeople;
     
     return newList;
