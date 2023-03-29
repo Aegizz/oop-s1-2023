@@ -14,6 +14,7 @@ class Orchestra {
         bool has_instrument(std::string instrument);
         Musician *get_memebers();
         bool add_musician(Musician new_musician);
-        
+
 
 }
+#endif
