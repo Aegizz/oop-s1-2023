@@ -24,4 +24,9 @@ bool Orchestra::has_instrument(std::string instrument){
         }
     }
 }
-bool Orchestra::add_musician()
+bool Orchestra::get_members(){
+    return list;
+}
+bool Orchestra::add_members(){
+    return true;
+}
