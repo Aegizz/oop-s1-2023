@@ -9,22 +9,12 @@ class Musician {
         int experience;
 
     public:
-        Musician::Musician(){
-            instrument = "";
-            experience = 0;
-        }
+        Musician();
 
-        Musician::Musician(std::string instrument, int experience){
-            int experience;
-            std::string instrument;
-        };
+        Musician(std::string instrument, int experience);
 
-        std::string get_instrument(){
-            return instrument;
-        }
-        int get_experience(){
-            return experience;
-        }
+        std::string get_instrument();
+        int get_experience();
 };
 
 #endif
