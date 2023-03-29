@@ -27,6 +27,9 @@ bool Orchestra::has_instrument(std::string instrument){
 bool Orchestra::get_members(){
     return list;
 }
-bool Orchestra::add_members(){
-    return true;
+bool Orchestra::add_musician(Musician new_musician){
+    if (sizeof(list) < size*8){
+        list[size - 1] = new_musician
+        return true;
+    }   
 }
