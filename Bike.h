@@ -3,8 +3,8 @@
 #include <string>
 class Bike{
     private:
-        std::string brand = "";
-        int code = 0;
+        std::string brand;
+        int code;
     public:
         Bike();
         Bike(std::string brand, int code);
