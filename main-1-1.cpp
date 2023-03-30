@@ -5,9 +5,8 @@
 using namespace std;
 
 int main(){
-    Bike Bike1 = Bike();
-    cout << Bike1.get_code();
-    Bike Bike2 = Bike("Giant", 12345);
-    cout << Bike2.get_brand();
+
+    Bike Bike2 = Bike(12345, "Giant");
+    cout << Bike2.get_code();
 
 }

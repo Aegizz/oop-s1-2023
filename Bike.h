@@ -7,7 +7,7 @@ class Bike{
         int code;
     public:
         Bike();
-        Bike(std::string brand, int code);
+        Bike(int _code, std::string _brand);
         std::string get_brand();
         int get_code();
 
