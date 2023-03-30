@@ -1,4 +1,5 @@
-
+#ifndef BIKE_H
+#define BIKE_H
 #include <string>
 class Bike{
     private:
@@ -11,4 +12,4 @@ class Bike{
         int get_code();
 
 };
-
+#endif BIKE_H
