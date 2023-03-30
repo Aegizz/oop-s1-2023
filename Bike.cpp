@@ -4,8 +4,8 @@
 
 
 Bike::Bike(){
-    std::string brand = "";
-    int code = 0;
+    brand = "";
+    code = 0;
 };
 Bike::Bike(int _code,std::string _brand){
     brand = _brand;
