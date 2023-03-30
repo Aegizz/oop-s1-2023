@@ -8,8 +8,8 @@ Bike::Bike(){
     int code = 0;
 };
 Bike::Bike(int _code,std::string _brand){
-    std::string brand = _brand;
-    int code = _code;
+    brand = _brand;
+    code = _code;
 };
 std::string Bike::get_brand(){
     return brand;
