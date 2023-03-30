@@ -1,4 +1,4 @@
-#ifndef
+
 #include <string>
 class Bike{
     private:
@@ -12,5 +12,3 @@ class Bike{
 
 };
 
-
-#endif
