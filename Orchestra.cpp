@@ -1,10 +1,10 @@
-#include "Orchestra.h"
 #include "Musician.h"
+#include "Orchestra.h"
 
-Orchestra::Orchestra(){
+Orchestra::Orchestra() {
     int size = 0;
-    Musician* list = new char[size];
-
+    Musician* list;
+    list = new Musician[size];
 }
 Orchestra::Orchestra(int _size){
     int size = _size
@@ -19,17 +19,18 @@ bool Orchestra::has_instrument(std::string instrument){
     for (int i =0; i < size; i++){
         if (list[i].get_instrument == instrument){
             return true;
-        } else {
-            return false;
         }
     }
+        return false;
 }
-bool Orchestra::get_members(){
+Musician* Orchestra::get_members(){
     return list;
 }
 bool Orchestra::add_musician(Musician new_musician){
-    if (sizeof(list) < size*8){
-        list[size - 1] = new_musician
-        return true;
-    }   
+    for (int i =0; i < size; i++){
+        if (list[i] == NULL){
+            list[size - 1] = new_musician;
+            return true;
+        }
+    }
 }
