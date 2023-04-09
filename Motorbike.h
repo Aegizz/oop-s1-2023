@@ -1,5 +1,7 @@
 #ifndef MOTORBIKE_H
 #define MOTORBIKE_H
+#include "Vehicle.h"
+
 #include <string>
 #include <ctime>
 
