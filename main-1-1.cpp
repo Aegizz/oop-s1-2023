@@ -22,10 +22,10 @@ int main(){
     for (int i =0; i < nCars; i++){
         vehicles[i] = new Car(IDcount++);
     }
-    for (int i =0; i < nBuses; i++){
+    for (int i =nCars; i < nCars + nBuses; i++){
         vehicles[i] = new Bus(IDcount++);
     }
-    for (int i =0; i < nMotorbikes; i++){
+    for (int i =nCars+nBuses; i < nCars+nBuses+nMotorbikes; i++){
         vehicles[i] = new Motorbike(IDcount++);
     }
     for (int i =0; i<sumVehicles; i++){
