@@ -7,8 +7,11 @@ Vehicle::Vehicle(std::time_t _timeOfEntry, int _ID){
     ID = _ID;
 };
 std::time_t Vehicle::getParkingDuration(){
+    return (time(NULL) - timeOfEntry);
+};
+std::time_t Vehicle::getTimeOfEntry(){
     return timeOfEntry;
-}
+};
 int Vehicle::getID(){
     return ID;
 };

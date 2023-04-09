@@ -3,9 +3,9 @@
 #include <ctime>
 
 Bus::Bus(int _ID)
-: Vehicle{0, _ID}
+: Vehicle{time(NULL), _ID}
 {};
 
 int Bus::getParkingDuration(){
-    return Vehicle::getParkingDuration()*0.75;
+    return (time(NULL) - getTimeOfEntry())*0.75;
 };

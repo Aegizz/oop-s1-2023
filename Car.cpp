@@ -3,9 +3,9 @@
 #include <ctime>
 
 Car::Car(int _ID)
-: Vehicle{0, _ID}
+: Vehicle{time(NULL), _ID}
 {};
 
 int Car::getParkingDuration(){
-    return Vehicle::getParkingDuration()*0.9;
+    return (time(NULL) - getTimeOfEntry())*0.9;
 };

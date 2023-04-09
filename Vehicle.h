@@ -1,6 +1,5 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
-#include "Vehicle.h"
 
 #include <string>
 #include <ctime>
@@ -13,7 +12,8 @@ class Vehicle{
     public:
         Vehicle(std::time_t _timeOfEntry, int _ID);
         int getID();
-        time_t getParkingDuration();
+        std::time_t getTimeOfEntry();
+        std::time_t getParkingDuration();
 };
 
 
