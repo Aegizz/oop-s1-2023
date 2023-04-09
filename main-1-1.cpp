@@ -1,10 +1,35 @@
-#include "player.h"
-#include "wizard.h"
-#include "warrior.h"
-#include <string>
+#include "vehicle.h"
+#include "bus.h"
+#include "car.h"
+#include "motorbike.h"
 #include <iostream>
+#include <ctime>
+using namespace std;
 int main(){
-    Warrior Player1 = Player("Warrior the Warrior", 100, 10);
-    Wizard Player2 = Player("Wizard the Wizard", 100, 10);
-    Player2.castSpell(Player1);
+    int nCars;
+    int nBuses;
+    int nMotorbikes;
+    cout << "How many cars would you like to enter? \n";
+    cin >> nCars;
+    cout << "How many buses would you like to enter? \n";
+    cin >> nBuses;
+    cout << "How many motorbikes would you like to enter? \n";
+    cin >> nMotorbikes;
+    int sumVehicles = nCars + nBuses + nMotorbikes;
+    Vehicle* vehicles[sumVehicles];
+    int IDcount;
+
+    for (int i =0; i < nCars; i++){
+        vehicles[i] = new Car(IDcount++);
+    }
+    for (int i =0; i < nBuses; i++){
+        vehicles[i] = new Bus(IDcount++);
+    }
+    for (int i =0; i < nMotorbikes; i++){
+        vehicles[i] = new Motorbike(IDcount++);
+    }
+    for (int i =0; i<sumVehicles; i++){
+        cout << "Vehicle ID: " << vehicles[i]->getID() << "\n" << vehicles[i]->getParkingDuration()<<endl;
+    }
+
 }
