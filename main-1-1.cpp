@@ -32,4 +32,4 @@ int main(){
         cout << "Vehicle ID: " << vehicles[i]->getID() << "\n" << vehicles[i]->getParkingDuration()<<endl;
     }
 
-}
+}                

@@ -5,7 +5,6 @@
 
 class Car: public Vehicle{
     public:
-        Car(std::time_t _timeOfEntry, int _ID);
         Car(int _ID);
         int getParkingDuration();
 

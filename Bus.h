@@ -5,7 +5,6 @@
 
 class Bus: public Vehicle{
     public:
-        Bus(std::time_t _timeOfEntry, int _ID);
         Bus(int _ID);
         int getParkingDuration();  
 };

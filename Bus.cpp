@@ -1,9 +1,7 @@
 #include "Vehicle.h"
 #include "Bus.h"
 #include <ctime>
-Bus::Bus(std::time_t _timeOfEntry, int _ID)
-: Vehicle{_timeOfEntry, _ID}
-{};
+
 Bus::Bus(int _ID)
 : Vehicle{0, _ID}
 {};
