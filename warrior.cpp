@@ -4,5 +4,5 @@
 
 void Warrior::swingWeapon(Player* opponent){
     std::cout << Warrior::name << " swings their " << weapon << " at " << opponent->getName() << "!\n";
-    opponent->takeDamage();
+    opponent->takeDamage(damage);
 };
