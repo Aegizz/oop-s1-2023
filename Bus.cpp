@@ -1,5 +1,5 @@
-#include "vehicle.h"
-#include "bus.h"
+#include "Vehicle.h"
+#include "Bus.h"
 #include <ctime>
 Bus::Bus(std::time_t _timeOfEntry, int _ID)
 : Vehicle{_timeOfEntry, _ID}

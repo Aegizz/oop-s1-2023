@@ -17,7 +17,7 @@ int main(){
     cin >> nMotorbikes;
     int sumVehicles = nCars + nBuses + nMotorbikes;
     Vehicle* vehicles[sumVehicles];
-    const int IDcount;
+    int IDcount;
 
     for (int i =0; i < nCars; i++){
         vehicles[i] = new Car(IDcount++);
