@@ -1,5 +1,5 @@
-#include "vehicle.h"
-#include "car.h"
+#include "Vehicle.h"
+#include "Car.h"
 #include <ctime>
 Car::Car(std::time_t _timeOfEntry, int _ID)
 : Vehicle{_timeOfEntry, _ID}
