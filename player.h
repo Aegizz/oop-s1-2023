@@ -3,11 +3,12 @@
 #include <string>
 
 class Player{
-    private:
+    protected:
         std::string name;
         int health;
         int damage;
     public:
+        Player();
         Player(std::string name, int health, int damage);
         void attack(Player* opponent, int damage);
         void takeDamage(int damage);

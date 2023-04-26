@@ -1,6 +1,16 @@
 #include "player.h"
 #include "wizard.h"
+#include <string>
 #include <iostream>
+
+Wizard::Wizard(){
+};
+Wizard::Wizard(std::string _name, int _health, int _damage){
+    name = _name;
+    health = _health;
+    damage = _damage;
+    mana = damage;
+};
 
 int Wizard::getMana(){
     return mana;
