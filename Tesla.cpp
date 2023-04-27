@@ -7,6 +7,7 @@ Tesla::Tesla(char _model, int _price){
     model = _model;
     price = _price;
     batteryPercentage = 100;
+    emissions = 0;
 };
 
 void Tesla::drive(int kms){
