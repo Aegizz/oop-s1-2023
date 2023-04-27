@@ -39,7 +39,7 @@ void Ford::drive(int kms){
 };
 float Ford::get_litresOfFuel(){
     return litresOfFuel;
-}
+};
 int Ford::get_badgeNumber(){
     return badgeNumber;
-}
+};

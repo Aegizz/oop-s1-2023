@@ -15,4 +15,5 @@ class Ford:public Car{
         void set_litresOfFuel(float litres);
         int get_badgeNumber();
         float get_litresOfFuel();
-}
+};
+#endif
