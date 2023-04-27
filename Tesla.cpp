@@ -19,7 +19,7 @@ void Tesla::drive(int kms){
         batteryPercentage = 0;
     }else {
         batteryPercentage = batteryPercentage - 0.2*(kms);
-        emissions = 0.74 * kms;
+        emissions = 74 * kms;
 
     }
 };
