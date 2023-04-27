@@ -26,7 +26,7 @@ void Ford::set_litresOfFuel(float litres){
     litresOfFuel = litres;
 };
 void Ford::drive(int kms){
-    int driven;
+    float driven;
     if (kms/(5*litresOfFuel) > 1){
         driven = 5 * litresOfFuel;
         litresOfFuel = 0;
