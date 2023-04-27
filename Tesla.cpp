@@ -26,6 +26,10 @@ void Tesla::drive(int kms){
 void Tesla::chargeBattery(int mins){
     batteryPercentage = 0.5 * mins + batteryPercentage;
 };
+float Tesla::get_batteryPercentage(){
+    return batteryPercentage;
+};
+
 char Tesla::get_model(){
     return model;
 };
