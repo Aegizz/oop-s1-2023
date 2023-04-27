@@ -11,7 +11,7 @@ Tesla::Tesla(char _model, int _price){
 
 void Tesla::drive(int kms){
     int check;
-    check = 100 - 0.05*(kms);
+    check = 100 - 0.2*(kms);
 
     if (check < 0){
 
