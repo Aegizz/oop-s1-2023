@@ -12,10 +12,10 @@ int Car::get_emissions(){
 int Car::get_price(){
     return price;
 };
-int Car::set_price(int _price){
+void Car::set_price(int _price){
     price = _price;
 };
-int Car::set_emissions(int _emissions){
+void Car::set_emissions(int _emissions){
     emissions = _emissions;
 };
 void Car::drive(int kms){

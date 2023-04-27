@@ -2,15 +2,15 @@
 #define CAR_H
 
 class Car{
-    private:
+    protected:
         int price;
         int emissions;
     public:
         Car();
         Car(int price);
         int get_price();
-        int set_price(int price);
-        int set_emissions(int emissions);
+        void set_price(int price);
+        void set_emissions(int emissions);
         int get_emissions();
 
         void drive(int kms);
