@@ -8,7 +8,7 @@ Ford::Ford(int _badgeNumber, int _price){
     price = _price;
     badgeNumber = _badgeNumber;
     emissions = 0;
-    litresOfFuel = 60;
+    litresOfFuel = 60.0;
 
 };
 
