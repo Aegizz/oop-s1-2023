@@ -8,8 +8,8 @@ class Avatar: public GridUnit{
     public:
         Avatar(){};
         Avatar(int x, int y){
-            coordinates = make_tuple(x, y);
-            entity = 'A';
+            this->setCoordinates(x, y);
+            this->setEntity('A');
         };
         void shift(int dx, int dy){
             this->setCoordinates(get<0>(coordinates)+ dx, get<1>(coordinates)+dy);

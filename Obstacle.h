@@ -11,7 +11,7 @@ class Obstacle:public Modifier{
         Obstacle(){};
         Obstacle(int x, int y){
             bool active = 1;
-            coordinates = make_tuple(x, y);
+            this->setCoordinates(x, y);
         };
         bool isActive(){
             return active;
