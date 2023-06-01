@@ -15,11 +15,19 @@ class GameSession{
 
 
 };
+GameSession::GameSession(){
+
+}
 vector<GridUnit*>& GameSession::getGrid(){
     return grid;
 }
 GameSession::initGameSession(int numAvatars, int numObstacles, int gridWidth, int gridHeight){
 
+}
+GameSession::gameCycle(int maxCycles, double obstacleActivationDistance){
+    for (int i = 0; i <  maxCYcles; i++){
+        
+    }
 }
 
 #endif

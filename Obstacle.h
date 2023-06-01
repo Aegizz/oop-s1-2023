@@ -16,9 +16,12 @@ class Obstacle:public Modifier{
         bool isActive(){
             return active;
         };
+        void setActive(bool _active){
+            active = _active;
+        }
         void apply(GridUnit& unit){
-            entity = 'O';
-            active = 0;
+            this->setEntity'O';
+            this->setActive(1);
         };
 };
 
