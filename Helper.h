@@ -1,6 +1,7 @@
 #ifndef HELPER_H
 #define HELPER_H
 #include <tuple>
+#include "GridUnit.h"
 
 using namespace std;
 

@@ -1,4 +1,6 @@
 #include "Helper.h"
+#include "GridUnit.h"
+
 #include <algorithm>
 #include <tuple>
 #include <cmath>
