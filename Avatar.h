@@ -10,7 +10,7 @@ class Avatar: public GridUnit{
         Avatar(int x, int y);
         void shift(int dx, int dy);
 
-}
+};
 #endif
 Avatar::Avatar(){
 

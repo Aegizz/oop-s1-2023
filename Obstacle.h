@@ -4,32 +4,32 @@
 #include "GridUnit.h"
 #include "Modifier.h"
 
-class Obstacle:public Modifier: public GridUnit{
+class Obstacle:public Modifier{
     private:
         bool active;
     public:
         Obstacle();
         Obstacle(int x, int y);
         bool isActive();
-}
+        void apply(GridUnit& unit);
+};
 #endif
 
-inline Obstacle::Obstacle()
+Obstacle::Obstacle()
 {
-    
+
+}
+Obstacle::Obstacle(int x, int y)
+{
+    bool active = 1;
+    coordinates = make_tuple(x, y);
 }
 
-inline Obstacle::Obstacle(int x, int y)
-{
-        bool active = 1;
-        coordinates = make_tuple(x, y)
-}
-
-Obstacle::isActive()
+bool Obstacle::isActive()
 {
         return active;
 }
-Obstacle::apply(GridUnit& unit){
-    entity = 'O'
+void Obstacle::apply(GridUnit& unit){
+    entity = 'O';
     active = 0;
 }
