@@ -14,17 +14,20 @@ class Obstacle:public Modifier: public GridUnit{
 }
 #endif
 
-
-Obstacle::Obstacle()
+inline Obstacle::Obstacle()
 {
+    
 }
-Obstacle::Obstacle(int x, int y)
+
+inline Obstacle::Obstacle(int x, int y)
 {
         bool active = 1;
         coordinates = make_tuple(x, y)
 }
-Obstacle::isActive(){
-    return active;
+
+Obstacle::isActive()
+{
+        return active;
 }
 Obstacle::apply(GridUnit& unit){
     entity = 'O'
