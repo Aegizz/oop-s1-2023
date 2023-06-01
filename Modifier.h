@@ -8,4 +8,8 @@ class Modifier{
     public:
         virtual void apply(GridUnit& unit);
 };
+
+void Modifier::apply(GridUnit& unit){
+
+}
 #endif

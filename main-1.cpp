@@ -4,5 +4,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-
+    GridUnit gridUnit = GridUnit(2,1,'a');
+    cout << get<0>(gridUnit.getCoordinates());
+    Helper 
 }
