@@ -12,7 +12,7 @@ class Avatar: public GridUnit{
             entity = 'A';
         };
         void shift(int dx, int dy){
-            coordinates = make_tuple(get<0>(coordinates)+ dx, get<1>(coordinates)+dy);
+            coordinates = setCoordinates(get<0>(coordinates)+ dx, get<1>(coordinates)+dy));
         };
 };
 
