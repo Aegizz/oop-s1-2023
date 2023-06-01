@@ -3,8 +3,7 @@
 #include "GridUnit.h"
 
 class Modifier{
-    private:
-
+    protected:
     public:
         virtual void apply(GridUnit& unit);
 };
