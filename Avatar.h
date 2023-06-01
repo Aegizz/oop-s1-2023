@@ -12,7 +12,7 @@ class Avatar: public GridUnit{
             entity = 'A';
         };
         void shift(int dx, int dy){
-            setCoordinates(get<0>(coordinates)+ dx, get<1>(coordinates)+dy);
+            this->setCoordinates(get<0>(coordinates)+ dx, get<1>(coordinates)+dy);
         };
 };
 
