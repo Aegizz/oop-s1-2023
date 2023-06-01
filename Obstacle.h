@@ -10,7 +10,7 @@ class Obstacle:public Modifier{
     public:
         Obstacle(){};
         Obstacle(int x, int y){
-            bool active = 1;
+            this->setActive(1);
             this->setCoordinates(x, y);
         };
         bool isActive(){
