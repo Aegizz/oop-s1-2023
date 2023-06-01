@@ -15,7 +15,7 @@ class Helper{
 };
 
 tuple<int, int> Helper::generateRandomCoordinates(int gridWidth, int gridHeight){
-    tuple<int, int> coords = tuple(rand()*gridWidth/RAND_MAX, rand()*gridHeight/RAND_MAX);
+    tuple<int, int> coords = make_tuple(rand()*gridWidth/RAND_MAX, rand()*gridHeight/RAND_MAX);
     return coords; 
 }
 double Helper::calculateDistance(tuple<int, int> coords1, tuple<int, int> coords2){
