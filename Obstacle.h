@@ -8,7 +8,10 @@ class Obstacle:public Modifier{
     private:
         bool active;
     public:
-        Obstacle(){};
+        Obstacle(){
+            this->setActive(1);
+
+        };
         Obstacle(int x, int y){
             this->setActive(1);
             this->setCoordinates(x, y);

@@ -6,7 +6,9 @@ class Avatar: public GridUnit{
     private:
 
     public:
-        Avatar(){};
+        Avatar(){            
+            this->setEntity('A');
+        };
         Avatar(int x, int y){
             this->setCoordinates(x, y);
             this->setEntity('A');
