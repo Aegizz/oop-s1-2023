@@ -23,8 +23,13 @@ vector<GridUnit*>& GameSession::getGrid(){
     return grid;
 }
 GameSession::initGameSession(int numAvatars, int numObstacles, int gridWidth, int gridHeight){
+    grid  = GridUnit(gridWidth, gridHeight);
     for (int i = 0; i < numAvatars; i++){
         avatars[i] = Avatar()
+        Helper help;
+        tuple<int, int> coords;
+        coords = help.generateRandomCoordinates();
+        avatars[i]->setCoordinates(get<0>(coords), get<1>(coords));
     }
 }
 GameSession::gameCycle(int maxCycles, double obstacleActivationDistance){
