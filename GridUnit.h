@@ -1,6 +1,6 @@
+#ifndef GRIDUNIT_H
+#define GRIDUNIT_H
 #include <tuple>
-#ifndef GRID_H
-#define GRID_H
 
 using namespace std;
 
