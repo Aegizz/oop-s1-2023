@@ -20,7 +20,7 @@ class Obstacle:public Modifier{
             active = _active;
         }
         void apply(GridUnit& unit){
-            this->setEntity'O';
+            this->setEntity('O');
             this->setActive(1);
         };
 };
