@@ -14,8 +14,8 @@ class GridUnit{
         tuple<int, int> getCoordinates();
         char getEntity();
         void setCoordinates(int x, int y);
-        void setEntity();
-}
+        void setEntity(char entity);
+};
 
 
 #endif

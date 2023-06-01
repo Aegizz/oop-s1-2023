@@ -9,4 +9,5 @@ class Helper{
     public:
     static tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight);
     static double calculateDistance(tuple<int, int> coords1, tuple<int, int> coords2);
-}
+};
+#endif
