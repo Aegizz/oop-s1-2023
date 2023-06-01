@@ -10,16 +10,16 @@ class Obstacle:public Modifier{
     public:
         Obstacle(){};
         Obstacle(int x, int y){
-    bool active = 1;
-    coordinates = make_tuple(x, y);
-};
+            bool active = 1;
+            coordinates = make_tuple(x, y);
+        };
         bool isActive(){
-        return active;
-};
+            return active;
+        };
         void apply(GridUnit& unit){
-    entity = 'O';
-    active = 0;
-};
+            entity = 'O';
+            active = 0;
+        };
 };
 
 #endif
