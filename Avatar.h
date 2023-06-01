@@ -11,7 +11,6 @@ class Avatar: public GridUnit{
         void shift(int dx, int dy);
 
 };
-#endif
 Avatar::Avatar(){
 
 }
@@ -22,3 +21,4 @@ Avatar::Avatar(int x, int y){
 void Avatar::shift(int dx, int dy){
     coordinates = make_tuple(get<0>(coordinates)+ dx, get<1>(coordinates)+dy);
 }
+#endif
