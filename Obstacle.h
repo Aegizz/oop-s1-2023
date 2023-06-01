@@ -8,28 +8,16 @@ class Obstacle:public Modifier{
     private:
         bool active;
     public:
-        Obstacle();
-        Obstacle(int x, int y);
-        bool isActive();
-        void apply(GridUnit& unit);
-};
-#endif
-
-Obstacle::Obstacle()
-{
-
-}
-Obstacle::Obstacle(int x, int y)
-{
+        Obstacle(){};
+        Obstacle(int x, int y){
     bool active = 1;
     coordinates = make_tuple(x, y);
-}
-
-bool Obstacle::isActive()
-{
-        return active;
-}
-void Obstacle::apply(GridUnit& unit){
+};
+        bool isActive(){        return active;
+};
+        void apply(GridUnit& unit){
     entity = 'O';
     active = 0;
-}
+};
+};
+#endif
